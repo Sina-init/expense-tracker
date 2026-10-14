@@ -8,9 +8,4 @@ connection=pyodbc.connect(
     "TrustServerCertificate=yes;"
 )
 
-print("connected successfully")
 cursor=connection.cursor()
-cursor.execute("SELECT * FROM expenses")
-rows=cursor.fetchall()
-for row in rows:
-    print(row)
